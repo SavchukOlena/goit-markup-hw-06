@@ -58,7 +58,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
+                <button data-modal-open class="hero-button button" type="button">Заказать услугу</button>
             </div>
         </section>    
         <!-- Advantages -->
@@ -365,7 +365,7 @@
                 </address>
             </div>
             <!-- /* --------Join-us-section------ */ -->
-            <section class="join-us">
+            <div class="join-us">
                 <h2 class="visually-hidden">Присоединяйтесь к нашим соц-сетям</h2>
                 <b class="join-us-call call">
                     присоединяйтесь
@@ -405,22 +405,22 @@
             
                     </li>
                 </ul>
-            </section>
-            <!-- ----------Sign-in-section--------- -->
-            <section class="sign-up">
-                <h2 class="visually-hidden">Подпишитесь на рассылку</h2>
+            </div>
+            <!-- ----------Sign-up-section--------- -->
+            <div class="sign-up">
                 <b class="sign-up-call call ">Подпишитесь на рассылку</b>
-                <form action="sign-in-form">
-                    <input type="email" class="email-input" name="email" placeholder="E-mail">
-                    <button type="submit" class="sign-up-button">     
+                <form class="sign-in-form" >
+                    <label for="email"></label>
+                    <input type="email" class="email-input" name="email" id="email" placeholder="E-mail">
+                    <button type="submit" class="sign-up-button">
                         Подписаться
                         <svg class="send-icon" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
-                        
+                
                 </form>
-            </section>
+            </div>
         </div>
         
     </footer>
@@ -464,22 +464,24 @@
                 </div>
             </div>
             <div class="comment-wrap">
-                <label for="comment" class="form-label">Комментарий</label>
+                <label for="comment" class="form-label comment">Комментарий</label>
                 <textarea name="comment" id="comment" class="comment-input" placeholder="Введите текст"></textarea>
             </div>
 
             <div class="agree-wrap">
-                <input type="checkbox" id="agree" class="agree-input visually-hidden" value="true">
+                <input type="checkbox" id="agree" name="agree-check" class="agree-input visually-hidden" value="true">
                 <label for="agree" class="agree-label">
                     <span>
                         <svg class="agree-icon" width="11" height="8">
                             <use href="./images/icons.svg#icon-agree"></use>
                         </svg>
                     </span>
-                    Соглашаюсь с рассылкой и принимаю <a href="" class="agree-terms ">Условия договора</a> 
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="agree-terms">Условия договора</a> 
 
                 </label>
             </div>
+
+            <button type="submit" class="modal-button button">Отправить</button>
             
         </div>
 
